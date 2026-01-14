@@ -1,8 +1,7 @@
 import React from 'react'
 import { BrowserRouter , Routes , Route} from 'react-router-dom'
 import Navbar from './layout/Navbar'
-import Dashboard from './pages/dashboard'
-import Contact from './pages/Contact'
+import Dashboard from './pages/Dashboard'
 import About from './pages/About'
 
 const App = () => {
