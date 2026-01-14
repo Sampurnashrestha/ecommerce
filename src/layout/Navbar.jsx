@@ -1,6 +1,8 @@
 import { React, useState } from 'react'
 import { Link } from 'react-scroll'
 import { Menu, X } from 'lucide-react'
+// eslint-disable-next-line no-unused-vars
+import { motion } from 'framer-motion'
 
 const Navbar = () => {
 
@@ -25,8 +27,12 @@ const Navbar = () => {
     return (
         <>
             <div className='   bg-white/1  backdrop-blur-sm border-b border-white/1 z-50  top-0 left-0  max-h-full flex flex-row justify-between px-6  py-3  items-center pt-5 fixed min-w-screen '>
-                <div className='text-3xl md:text-4xl lg:text-5xl  font-cedraville  font-bold text-center text-white'>
-                    Bean Scence
+                <div className='text-3xl md:text-4xl lg:text-5xl  font-cedraville  font-bold text-center text-white cursor-default'>
+                <Link
+                    to='dashboard'
+                >
+                 Bean Scence
+                </Link>
                 </div>
 
                 <nav className='hidden   md:flex  gap-10 justify-between'>
@@ -36,7 +42,6 @@ const Navbar = () => {
                         to="dashboard"
                     > Home
                     </Link>
-
 
 
 
@@ -51,7 +56,7 @@ const Navbar = () => {
                     <Link
                         onClick={() => setActive("menu")}
                         className={nav("menu")}
-                        to="/menu"
+                        to="menu"
                     >
                         Menu
                     </Link>
@@ -66,9 +71,12 @@ const Navbar = () => {
                 </nav>
 
 
-                <button className='hidden md:block bg-yellow-300 text-sm  h-10 px-6 rounded-lg  text-center flex  items-center text-gray-600 hover:bg-yellow-400 hover:text-gray-900 hover:shadow-lg hover:scale-110 transition-all duration-300 ease-in-out cursor-pointer ' >
+                <motion.button 
+                whileTap={{scale:0.3}}
+                transition={{duration: 0.1}}
+                className='hidden md:block bg-yellow-300 text-sm  h-10 px-6 rounded-lg  text-center flex  items-center text-gray-600 hover:bg-yellow-400 hover:text-white hover:shadow-lg hover:scale-110 transition-all duration-300 ease-in-out cursor-pointer ' >
                     SignUP
-                </button>
+                </motion.button>
 
 
 

@@ -1,6 +1,8 @@
 import React from 'react'
 import AboutImg from '../assets/image/about.webp'
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
+
 
 const About = () => {
     return (
@@ -19,11 +21,11 @@ const About = () => {
                         />
                     </motion.div>
 
-                    <motion.div
-                    initial={{opacity:0 , y: 50}}
+                    <motion.div 
+                    initial={{opacity:0 , y: 70}}
                     whileInView={{opacity:1, y: 0}}
                     transition={{duration: 0.6}}
-                    className='w-full md:w-1/2 text-white px-3 md:px-20 mt-10 md:mt-30 text-center md:text-justify'>
+                    className='w-full md:w-1/2 text-white px-3 md:px-20 mt-10 md:mt-30 lg:mt-40 text-center md:text-justify'>
                         <h2 className='text-4xl md:text-6xl  font-bold cursor-default'>About Us</h2>
                         <p className='mt-4 text-md md:text-lg text-center md:text-justify font-tinos cursor-default'> At <span className="text-xl font-semibold tracking-wider ">Bean Scene</span>, we believe coffee
                             is more than just a drink — it’s a moment of comfort and connection.

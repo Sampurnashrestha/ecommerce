@@ -4,6 +4,7 @@ import Navbar from './layout/Navbar'
 import Dashboard from './pages/Dashboard'
 import About from './pages/About'
 import Background from './component/Background'
+import Menu from './pages/Menu'
 
 const App = () => {
   return (
@@ -18,6 +19,9 @@ const App = () => {
 
       <section name="about">
         <About />
+      </section>
+      <section name="menu">
+        <Menu />
       </section>
       </main>
       </Background>
