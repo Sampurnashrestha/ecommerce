@@ -14,7 +14,7 @@ const Navbar = () => {
             ? "text-yellow-500"
             : " text-white"
         }
-        hover:text-yellow-500 hover:scale-110  transition-transform duration-300 `
+        hover:text-yellow-500 hover:scale-110  transition-transform duration-300 cursor-pointer`
     )
 
 
@@ -77,7 +77,7 @@ const Navbar = () => {
                 <div className='md:hidden'>
                     <button
                         onClick={toggleNavbar}
-                        className='text-white'
+                        className='text-white cursor-pointer'
                     >
                         {isOpen ? <X /> : <Menu />}
                     </button>

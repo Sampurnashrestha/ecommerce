@@ -3,13 +3,15 @@ import { BrowserRouter , Routes , Route} from 'react-router-dom'
 import Navbar from './layout/Navbar'
 import Dashboard from './pages/Dashboard'
 import About from './pages/About'
+import Background from './component/Background'
 
 const App = () => {
   return (
     <div>
       <BrowserRouter>
+      <Background>
       <Navbar />
-      <main className='pt-20' >
+      <main className=' relative z-10' >
       <section name="dashboard">
         <Dashboard />
       </section>
@@ -18,6 +20,7 @@ const App = () => {
         <About />
       </section>
       </main>
+      </Background>
       </BrowserRouter>
     </div>
   )
