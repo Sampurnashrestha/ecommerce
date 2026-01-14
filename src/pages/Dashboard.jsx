@@ -1,5 +1,5 @@
 import React from 'react'
-import heroImg from '../assets/image/hero.jpg'
+import heroImg from '../assets/image/hero.webp'
 
 const Dashboard = () => {
   return (
