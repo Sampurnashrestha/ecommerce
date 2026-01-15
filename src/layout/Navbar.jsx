@@ -64,7 +64,7 @@ const Navbar = () => {
                     <Link
                         onClick={() => setActive("contact")}
                         className={nav("contact")}
-                        to="/contact"
+                        to="contact"
                     >
                         Contact Us
                     </Link>
@@ -113,7 +113,7 @@ const Navbar = () => {
                             <Link
                                 onClick={() => setActive("menu")}
                                 className={nav("menu")}
-                                to="/menu"
+                                to="menu"
                             >
                                 Menu
                             </Link>
@@ -122,7 +122,7 @@ const Navbar = () => {
                             <Link
                                 onClick={() => setActive("contact")}
                                 className={nav("contact")}
-                                to="/contact"
+                                to="contact"
                             >
                                 Contact Us
                             </Link>

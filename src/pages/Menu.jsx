@@ -5,21 +5,21 @@ import { motion } from "framer-motion"
 const Menu = () => {
   return (
     <>
-    <div className='min-h-[650px] max-w-full px-6 bg-black/40 '>
+    <div className='min-h-screen max-w-full px-6 bg-black/40 '>
 
       <motion.h1
       initial={{opacity: 0, y: 50}}
       whileInView={{opacity: 1, y: 0}}
       transition={{ duration: 0.6}}
-      className='text-8xl font-bold font-tinos text-white text-center pt-10 cursor-default'>
+      className='text-8xl font-bold font-tinos text-white text-center pt-20 cursor-default'>
         Menu
       </motion.h1>
 
       <motion.div
-      initial={{filter: "blur(10px)", opacity: 0, y: 50}}
+      initial={{filter: "blur(10px)", opacity: 0, y: 10}}
       whileInView={{filter: "blur(0px)", opacity: 1, y:0}}
       transition={{duration: 0.6}}
-      className='w-[300px] bg-white rounded-xl p-5 overflow-hidden   mt-15 mx-10 flex flex-col gap-5 hover:scale-105 hover:drop-shadow-[0_8px_10px_rgba(0,0,0,0.5)]  transition  duration-300'>
+      className='w-[300px] bg-white rounded-xl p-5 overflow-hidden   mt-15 mx-6  md:mx-10 flex flex-col gap-5 hover:scale-105 hover:drop-shadow-[0_8px_10px_rgba(0,0,0,0.5)]  transition  duration-300'>
         <div className='h-40'>
         <img src="" alt="product"  />
         </div>

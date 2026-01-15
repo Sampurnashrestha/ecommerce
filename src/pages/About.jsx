@@ -8,7 +8,7 @@ const About = () => {
     return (
         <>
             <div className='max-w-full  mt-20 '>
-                <div className='bg-gray-500/20 backdrop-blur-md  flex flex-col md:flex-row justify-center  min-h-[700px] bg-fixed '>
+                <div className='bg-black/20 backdrop-blur-md  flex flex-col md:flex-row justify-center  min-h-[700px] bg-fixed '>
                     <motion.div 
                     initial={{opacity: 0, y: 50}}
                     whileInView={{opacity: 1, y:0}}
