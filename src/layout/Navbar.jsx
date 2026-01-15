@@ -72,9 +72,9 @@ const Navbar = () => {
 
 
                 <motion.button 
-                whileTap={{scale:0.3}}
-                transition={{duration: 0.1}}
-                className='hidden md:block bg-yellow-300 text-sm  h-10 px-6 rounded-lg  text-center flex  items-center text-gray-600 hover:bg-yellow-400 hover:text-white hover:shadow-lg hover:scale-110 transition-all duration-300 ease-in-out cursor-pointer ' >
+                whileTap={{scale:0.7}}
+            transition={{duration: 0.2}}
+                className='hidden md:block bg-yellow-300 text-sm  h-10 px-6 mx-2 rounded-lg  text-center flex  items-center text-gray-600 hover:bg-yellow-400 hover:text-white hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer ' >
                     SignUP
                 </motion.button>
 
