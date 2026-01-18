@@ -23,7 +23,7 @@ const MenuDetails = () => {
 
   return (
     <div className="min-h-screen flex flex-col px-4">
-      {/* Back button */}
+     
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -39,7 +39,7 @@ const MenuDetails = () => {
         </Link>
       </motion.div>
 
-      {/* Center container */}
+      
       <div className="flex justify-center items-center mt-6 md:mt-20">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -55,7 +55,7 @@ const MenuDetails = () => {
             md:px-40
           "
         >
-          {/* Image */}
+         
           <div className="hover:scale-105 transition duration-300">
             <img
               src={data?.image}
@@ -64,7 +64,7 @@ const MenuDetails = () => {
             />
           </div>
 
-          {/* Content */}
+         
           <div className="flex flex-col max-w-lg text-center md:text-left">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-yellow-500 uppercase">
               {data?.name}
