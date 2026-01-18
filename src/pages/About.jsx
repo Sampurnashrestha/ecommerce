@@ -8,12 +8,12 @@ const About = () => {
     return (
         <>
             <div className='max-w-full  mt-20 '>
-                <div className='bg-black/20 backdrop-blur-md  flex flex-col md:flex-row justify-center  min-h-[700px] bg-fixed '>
+                <div className='bg-black/20 backdrop-blur-md  flex flex-col md:flex-row justify-center  min-h-[750px] bg-fixed '>
                     <motion.div 
                     initial={{opacity: 0, y: 50}}
                     whileInView={{opacity: 1, y:0}}
                     transition={{duration: 0.6}}
-                    className=" md:mt-35 px-5 md:px-0 md:pl-20">
+                    className=" md:mt-50 px-5 md:px-0 md:pl-20">
                         <img
                             src={AboutImg}
                             alt="About us"
@@ -25,7 +25,7 @@ const About = () => {
                     initial={{opacity:0 , y: 70}}
                     whileInView={{opacity:1, y: 0}}
                     transition={{duration: 0.6}}
-                    className='w-full md:w-1/2 text-white px-3 md:px-20 mt-10 md:mt-30 lg:mt-40 text-center md:text-justify'>
+                    className='w-full md:w-1/2 text-white px-3 md:px-20 mt-10 md:mt-30 lg:mt-70 text-center md:text-justify'>
                         <h2 className='text-4xl md:text-6xl  font-bold cursor-default'>About Us</h2>
                         <p className='mt-4 text-md md:text-lg text-center md:text-justify font-tinos cursor-default'> At <span className="text-xl font-semibold tracking-wider ">Bean Scene</span>, we believe coffee
                             is more than just a drink — it’s a moment of comfort and connection.

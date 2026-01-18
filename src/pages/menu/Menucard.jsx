@@ -1,16 +1,24 @@
 import React from "react";
 import { motion } from "framer-motion"
+import { Link } from "react-router-dom";
 
 const Menucard = ({ id, image, name, price, description, rate }) => {
   return (
     <div>
+
+      
+      
       <motion.div
         initial={{ filter: "blur(10px)", opacity: 0, y: 10 }}
         whileInView={{ filter: "blur(0px)", opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         key={id}
-        className="w-[300px] bg-white rounded-xl p-5 overflow-hidden   mt-15 mx-6  md:mx-10 flex flex-col gap-5 hover:scale-105 hover:drop-shadow-[0_8px_10px_rgba(0,0,0,0.5)]  transition  duration-300"
+        className="md:w-[300px] bg-white rounded-xl p-5 overflow-hidden   mt-15 mx-6  md:mx-10 flex flex-col gap-5 hover:scale-105 hover:drop-shadow-[0_8px_10px_rgba(0,0,0,0.5)]  transition  duration-300"
       >
+        <Link
+        to={`/menu/${id}`}
+        >
+       
         <div className="h-40">
           <img src={image} alt="product" />
         </div>
@@ -28,6 +36,7 @@ const Menucard = ({ id, image, name, price, description, rate }) => {
               {rate}
             </div>
           </div>
+          
           <motion.div
             whileTap={{ scale: 0.7 }}
             transition={{ duration: 0.2 }}
@@ -36,6 +45,7 @@ const Menucard = ({ id, image, name, price, description, rate }) => {
             <button>Order Now</button>
           </motion.div>
         </div>
+         </Link>
       </motion.div>
     </div>
   );

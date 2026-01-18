@@ -3,6 +3,7 @@ import { BrowserRouter , Routes , Route} from 'react-router-dom'
 import Layout from './layout/Layout'
 import AllMenu from './pages/menu/AllMenu'
 import Background from './component/Background'
+import MenuDetails from './pages/menu/MenuDetails'
 
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Layout />} />
           <Route path='/menu' element={<AllMenu />} />
+          <Route path='/menu/:id' element={<MenuDetails />} /> 
         </Routes>
         </Background>
       </BrowserRouter>
