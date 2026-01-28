@@ -33,7 +33,7 @@ const Dashboard = () => {
               best flavours coffee you will ever have. We provide the best for
               our customers.
             </motion.p>
-            <motion.div 
+            <motion.div   
             initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0}}
               transition={{ duration: 2 }}

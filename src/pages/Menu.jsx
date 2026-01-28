@@ -10,7 +10,7 @@ const Menu = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch("https://696865a669178471522a6006.mockapi.io/coffee");
+      const res = await fetch("https://696865a669178471522a6006.mockapi.io/coffee/coffee");
       const data = await res.json();
       setData(data);
     };
