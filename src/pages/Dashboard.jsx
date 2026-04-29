@@ -6,22 +6,22 @@ const Dashboard = () => {
   return (
     <>
       <div className=" max-h-screen min-w-full ">
-        <section className="    flex  pt-40 justify-center lg:pl-[40rem] text-white px-6 text-center md:text-left">
-          <div className="max-w-lg md:pr-32 ">
+        <section className="    flex  pt-40 justify-start md:pl-40 text-white px-6 text-center md:text-left">
+          <div className="max-w-lg ">
             <motion.span
               initial={{ opacity: 0, y: 30}}
               whileInView={{ opacity: 1, y:0 }}
               transition={{ duration: 2}}
-              className="font-tinos text-[1.2rem] md:text-[1.5rem]  cursor-default"
+              className="font-tinos text-[1.2rem]  md:text-[1.5rem]   cursor-default"
             >
               We've got your morning covered with
             </motion.span>
 
             <motion.h1 
-             initial={{ opacity: 0, y: 30 }}
+             initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y:0 }}
               transition={{ duration: 2}}
-            className=" font-cedraville text-[6rem] md:text-[13rem] cursor-default">
+            className=" font-lavish  text-[7rem] md:text-[13rem] text-center dm:text-left cursor-default">
               Coffee
             </motion.h1>
             <motion.p 

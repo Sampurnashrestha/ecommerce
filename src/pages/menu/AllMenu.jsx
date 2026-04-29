@@ -9,7 +9,7 @@ const AllMenu = () => {
     useEffect(() => {
         const fetchData = async () => {
             const res = await fetch(
-                "https://696865a669178471522a6006.mockapi.io/coffee",
+                "https://jsonplaceholder.typicode.com/todos",
             );
             const data = await res.json();
             setData(data);

@@ -26,3 +26,12 @@
  @theme{
   --font-priestancy: priestancy, "cursive";
  }
+ @font-face{
+  font-family: lavish;
+  src: url("../src/assets/font/LavishlyYours-Regular.ttf");
+ }
+ @theme{
+  --font-lavish: lavish;
+ }
+ 
+ 
